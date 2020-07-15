@@ -1,0 +1,35 @@
+const express = require("express");
+//faz a importação da biblioteca express e aplica ela a variavel express.
+
+const app = express();
+//adicina todos os metodos da biblioteca express para variavel app.
+
+app.listen(3333);
+//indica que vai ser usado a porta 3333 para servidor da aplicação.
+
+//GET = Quando quero ´´buscar´´ uma informação do meu backend
+//POST = Quando quero adicionar(criar) uma informação no meu backend
+//PUT = Quando quero fazer uma ateração(editar) em uma informação no meu backend
+//DELETE = Quando quero ´deletar´ uma informação.
+
+app.get("/exemplo", (req, res) => {return ...});
+//o get e usado para acessar elementos da requisição(req), nesse metodo e passado primeiramente a rota (exemplo) logo apos uma função. (res) é a resposta enviada do backend para o frontend da aplicação, ou o retorno da função.
+
+//req.query = acessar query params (usados para filtros)
+//req.params = acessar route params (para edição, delete)
+//req.body = acessar o corpo da requisição (Criação, edição de registros)
+
+app.use(express.json());
+//Como se fosse um plugin informando ao express para usar o json
+
+mongoose.connect(url fornecida no site, { useNewUrlParser: true, useUnifiedTopology: true, });
+//conecxão ao banco de dados mongoose.
+
+//index = Quer dizer que agente tá criando um metodo que vai retornar uma listagem
+//show = Metodo que vai retornar uma listagem de apenas uma sessão
+//store = Criar uma sessão
+//update = alterar uma sessão
+//destroy = deletar uma sessão
+
+async... await
+//para funções assincronas que podem demorar a serem executadas.
